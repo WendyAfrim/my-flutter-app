@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_5iwj/toto.dart';
+import 'package:flutter_5iwj/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,33 +20,8 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const Toto(
-        title: 'There is a title',
-        child: Home(),
-      ),
-    );
-  }
-}
-
-class Home extends StatelessWidget {
-  const Home({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      child: Center(
-        child: Toto(
-          title: 'Bonjour',
-          child: Builder(
-            builder: (context) {
-              return Text(
-                Toto.of(context)?.title ?? 'No title',
-                style: Theme.of(context).textTheme.displayLarge,
-              );
-            }
-          ),
-        ),
+      home: const Home(
+        title: 'My Title',
       ),
     );
   }
