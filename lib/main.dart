@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_5iwj/home.dart';
+import 'package:flutter_5iwj/square.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,9 +20,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const Home(
-        title: 'My Title',
-      ),
+      home: const Example(),
     );
   }
 }
