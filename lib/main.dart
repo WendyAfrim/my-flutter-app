@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_5iwj/list.dart';
 import 'package:flutter_5iwj/square.dart';
+import 'package:flutter_5iwj/user_home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,13 +16,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         textTheme: const TextTheme(
           displayLarge: TextStyle(
-            color: Colors.amber,
+            color: Colors.white,
             fontSize: 22,
             fontWeight: FontWeight.bold,
           ),
         ),
       ),
-      home: const Example(),
+      home: const HomeUser(),
     );
   }
 }
